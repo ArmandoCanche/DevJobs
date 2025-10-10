@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJobs - Empleos</title>
+    <link rel="stylesheet" href="empleos.css">
+</head>
+<body>
+        <header>
+            <div>
+                <svg width="1.5em" height="2em" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M12.08 24 4 19.248 9.955 8.752l8.085 4.744L18.045 4h11.91l.005 9.496 8.085-4.744L44 19.248 35.92 24 44 28.752l-5.955 10.496-8.085-4.744L29.955 44h-11.91l-.005-9.496-8.085 4.744L4 28.752z" fill="currentColor" fill-rule="evenodd"/></svg>
+                <h2> DevJobs</h2>
+            </div>
+            <nav>
+                <a href="./index.html">Inicio</a>
+                <a href="./empleos.html">Empleos</a>
+                <a href="">Empresas</a>
+                <a href="">Salarios</a>
+            </nav>
+            <div>
+                <a href="">Subir CV</a>
+                <img src="uifaces-human-avatar.jpg" alt="Foto de perfil" class="avatar" >
+            </div>
+        </header>
+        
+        <main>
+            <section>
+                <h1>Encuentra tu próximo trabajo</h1>
+                <p>Explora miles de oportunidades en el sector tecnológico</p>
+                 <form role="search">
+                    <div>
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                        <input type="text" placeholder="Buscar trabajos, empresas o habilidades">
+                    </div>
+                </form>
+                <div>
+                    <select name="Tecnologías" id="Tecnologías">
+                        <option value="Tecnologías">Tecnologías</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="React">React</option>
+                    </select>
+                    <select name="Ubicación" id="Ubicación">
+                        <option value="Ubicacion">Ubicación</option>
+                        <option value="Guadalajara">Guadalajara</option>
+                        <option value="Jalisco">Jalisco</option>
+                        <option value="Monterrey">Monterrey</option>
+                    </select>
+                    <select name="Contrato" id="Contrato">
+                        <option value="Contrato">Contrato</option>
+                        <option value="TiempoCompleto">Tiempo completo</option>
+                        <option value="MedioTiempo">Medio tiempo</option>
+                        <option value="ContratoTemporal">Contrato temporal</option>
+                    </select>
+                    <select name="NivelExperiencia" id="NivelExperiencia">
+                        <option value="NivelExperiencia">Nivel de experiencia</option>
+                        <option value="Trainee">Trainee</option>
+                        <option value="Junior">Junior</option>
+                        <option value="SemiSenior">Semi senior</option>
+                    </select>
+                </div>
+            </section>
+
+            <section>
+                <h2>Resultados de la búsqueda</h2>
+                <article>
+                    <div>
+                        <h3>Ingeniero de Software</h3>
+                        <p>Tech Solutions Inc. | Remoto</p>
+                        <p>Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en JavaScript, React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de comunicación.</p>
+                    </div>
+                    <div>
+                        <button>Aplicar</button>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Analista de Datos</h3>
+                        <p>Data Driven Co. | Ciudad de México</p>
+                        <p>Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos y herramientas de visualización. Se requiere conocimiento en SQL, Python y R.</p>
+                    </div>
+                    <div>
+                        <button>Aplicar</button>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Desarrollador de Aplicaciones Móviles</h3>
+                        <p>Mobile Apps Ltd. | Guadalajara</p>
+                        <p>buscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El candidato debe tener conocimientos en Swift, Ktlin y el desarrollo dee interfaces de usuario.</p>
+                    </div>
+                    <div>
+                        <button>Aplicar</button>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h3>Ingeniero de DevOps</h3>
+                        <p>Cloud Services SA | Remoto</p>
+                        <p>Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructura en la nube, automatización de procesos y herramientas de integración continua. Se requiere conocimientos en AWS, Azure o GCP</p>
+                    </div>
+                    <div>
+                        <button>Aplicar</button>
+                    </div>
+                </article>
+
+                <footer>
+                <ul class="pagination">
+                    <li><a href="#">&lt;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&gt;</a></li>
+                </ul>
+                </footer>
+            </section>
+        </main>
+
+        <footer>
+            <small>&copy; 2025 DevJobs. Todos los derechos reservados.</small>
+        </footer>
+</body>
+</html>
