@@ -390,7 +390,7 @@ footer {
 }
 
 
-.job-listings article{
+.jobs-listings article{
     background-color: var(--background);
       padding: 1rem;
       border: 2px solid #141d26;
