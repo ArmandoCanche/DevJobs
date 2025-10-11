@@ -200,6 +200,7 @@ main > section:nth-child(1) > div {
   gap: 0.5em 0.5em;
 
   select{
+    width: 20%;
     padding: 0.6em 2.5em 0.6em 1em;
     color: #ffffff;
     background-color: #242d3a;
@@ -282,19 +283,20 @@ main > section:nth-child(2) {
   }
 
   button{
-    background-color: #1172d1;
+    background-color: var(--primary);
     color: #cbd5e1;
     padding: 0.5em 1.2em;
     border-radius: 5px;
     border: none;
+    margin-left: 1.3rem;
 
     &:hover{
       background-color: var(--primary-hover);
-      outline: none;
+      border: 1px solid white;
     }
 
     &:focus{
-      background-color: var(--primary-dark);
+      background-color: var(--primary-light);
       outline: none;
     }
   }
@@ -406,4 +408,16 @@ footer {
         font-weight: 500;
       }
 
+}
+
+
+
+.button-apply-job{
+  background: rgb(149, 150, 151);
+
+
+  &.is-applied{
+    background: rgb(93, 138, 93);
+    pointer-events: none;
+  }
 }
