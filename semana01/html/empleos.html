@@ -38,28 +38,30 @@
                     </div>
                 </form>
                 <div>
-                    <select name="Tecnologías" id="Tecnologías">
+                    <select name="Tecnologías" id="filtro-tecnologias">
                         <option value="Tecnologías">Tecnologías</option>
-                        <option value="HTML">HTML</option>
-                        <option value="CSS">CSS</option>
+                        <option value="Swift">Swift</option>
+                        <option value="Python">Python</option>
                         <option value="React">React</option>
+                        <option value="AWS">AWS</option>
                     </select>
-                    <select name="Ubicación" id="Ubicación">
+                    <select name="Ubicación" id="filtro-ubicacion">
                         <option value="Ubicacion">Ubicación</option>
                         <option value="Guadalajara">Guadalajara</option>
-                        <option value="Jalisco">Jalisco</option>
-                        <option value="Monterrey">Monterrey</option>
+                        <option value="Ciudad de Mexico">Ciudad de Mexico</option>
+                        <option value="Remoto">Remoto</option>
                     </select>
-                    <select name="Contrato" id="Contrato">
+                    <select name="Contrato" id="filtro-contrato">
                         <option value="Contrato">Contrato</option>
                         <option value="TiempoCompleto">Tiempo completo</option>
                         <option value="MedioTiempo">Medio tiempo</option>
                         <option value="ContratoTemporal">Contrato temporal</option>
                     </select>
-                    <select name="NivelExperiencia" id="NivelExperiencia">
+                    <select name="NivelExperiencia" id="filtro-experiencia">
                         <option value="NivelExperiencia">Nivel de experiencia</option>
                         <option value="Trainee">Trainee</option>
                         <option value="Junior">Junior</option>
+                        <option value="Senior">Senior</option>
                         <option value="SemiSenior">Semi senior</option>
                     </select>
                 </div>
@@ -68,7 +70,12 @@
             <section >
                 <h2>Resultados de la búsqueda</h2>
                 <div class="jobs-listings">
-                    <article class="job-listing-card">
+                    <article class="job-listing-card"
+                    data-tecnologia = "React"
+                    data-ubicacion = "Remoto"
+                    data-contrato = "TiempoCompleto"
+                    data-experiencia = "Senior"
+                    >
                         <div>
                             <h3>Ingeniero de Software</h3>
                             <p>Tech Solutions Inc. | Remoto</p>
@@ -78,7 +85,12 @@
                             <button id="boton-importante" class="button-apply-job">Aplicar</button>
                         </div>
                     </article>
-                    <article>
+                    <article
+                    data-tecnologia = "Python"
+                    data-ubicacion = "Ciudad de Mexico"
+                    data-contrato = "MedioTiempo"
+                    data-experiencia = "Junior"
+                    >
                         <div>
                             <h3>Analista de Datos</h3>
                             <p>Data Driven Co. | Ciudad de México</p>
@@ -88,7 +100,12 @@
                             <button class="button-apply-job">Aplicar</button>
                         </div>
                     </article>
-                    <article>
+                    <article
+                    data-tecnologia = "Swift"
+                    data-ubicacion = "Guadalajara"
+                    data-contrato = "ContratoTemporal"
+                    data-experiencia = "SemiSenior"
+                    >
                         <div>
                             <h3>Desarrollador de Aplicaciones Móviles</h3>
                             <p>Mobile Apps Ltd. | Guadalajara</p>
@@ -98,7 +115,12 @@
                             <button class="button-apply-job">Aplicar</button>
                         </div>
                     </article>
-                    <article>
+                    <article
+                    data-tecnologia = "AWS"
+                    data-ubicacion = "Remoto"
+                    data-contrato = "TiempoCompleto"
+                    data-experiencia = "Senior"
+                    >
                         <div>
                             <h3>Ingeniero de DevOps</h3>
                             <p>Cloud Services SA | Remoto</p>
