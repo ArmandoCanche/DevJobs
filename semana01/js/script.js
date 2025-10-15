@@ -42,10 +42,10 @@ function filtrarTrabajos(){
     const experiencia = selectExperiencia.value;
 
     articulos.forEach((articulo) => {
-        const cumpleTecnologia = tecnologia === "Tecnologías" || articulo.dataset.tecnologia === tecnologia;
-        const cumpleUbicacion = ubicacion === "Ubicacion" || articulo.dataset.ubicacion === ubicacion;
-        const cumpleContrato = contrato === "Contrato" || articulo.dataset.contrato === contrato;
-        const cumpleExperiencia = experiencia === "NivelExperiencia" || articulo.dataset.experiencia === experiencia;
+        const cumpleTecnologia = tecnologia === ""  || articulo.dataset.tecnologia === tecnologia;
+        const cumpleUbicacion = ubicacion === ""  ||articulo.dataset.ubicacion === ubicacion;
+        const cumpleContrato = contrato === ""  ||articulo.dataset.contrato === contrato;
+        const cumpleExperiencia = experiencia === ""  ||articulo.dataset.experiencia === experiencia;
 
 
         if(cumpleTecnologia && cumpleUbicacion && cumpleContrato && cumpleExperiencia){
@@ -61,3 +61,16 @@ selectTecnologias.addEventListener('change',filtrarTrabajos);
 selectUbicacion.addEventListener('change',filtrarTrabajos);
 selectContrato.addEventListener('change',filtrarTrabajos);
 selectExperiencia.addEventListener('change',filtrarTrabajos);
+
+
+
+
+fetch()
+.then((response) =>{
+    return response.json();
+})
+.then((jobs)=>{
+    jobs.forEach(job =>{
+        const article = document
+    })
+})
