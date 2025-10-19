@@ -38,6 +38,8 @@ const selectUbicacion = document.getElementById('filtro-ubicacion');
 const selectContrato = document.getElementById('filtro-contrato');
 const selectExperiencia = document.getElementById('filtro-experiencia');
 
+const searchInput = document.querySelector('#empleo-search-input')
+
 
 function filtrarTrabajos(){
     const articulos = document.querySelectorAll('.job-listing-card');
@@ -45,14 +47,22 @@ function filtrarTrabajos(){
     const ubicacion = selectUbicacion.value;
     const contrato = selectContrato.value;
     const experiencia = selectExperiencia.value;
+    const input = searchInput.value.toLowerCase();
 
     articulos.forEach((articulo) => {
+
+        const tituloElemento = articulo.querySelector('h3')
+        const tituloTexto = tituloElemento ? tituloElemento.textContent.toLowerCase() : '';
+
+        const cumpleInput = input === "" || tituloTexto.includes(input);
+        console.log(cumpleInput)
         const cumpleTecnologia = tecnologia === ""  || articulo.dataset.tecnologia === tecnologia;
         const cumpleUbicacion = ubicacion === ""  ||articulo.dataset.ubicacion === ubicacion;
         const cumpleContrato = contrato === ""  ||articulo.dataset.contrato === contrato;
         const cumpleExperiencia = experiencia === ""  ||articulo.dataset.experiencia === experiencia;
-        
-        const visible = cumpleTecnologia && cumpleUbicacion && cumpleContrato && cumpleExperiencia;
+
+
+        const visible = cumpleTecnologia && cumpleUbicacion && cumpleContrato && cumpleExperiencia && cumpleInput;
 
         articulo.classList.toggle('is-hidden', !visible)
     });
@@ -66,6 +76,10 @@ selectExperiencia.addEventListener('change',filtrarTrabajos);
 
 
 
+searchInput.addEventListener('input', filtrarTrabajos)
+
+
+
 // <-----------------------------------------
 
 
@@ -76,7 +90,7 @@ fetch("../json/data.json")
 })
 .then((jobs) =>{
     jobs.forEach((job) =>{
-        console.log(job)
+        // console.log(job)
         const article = document.createElement('article')
         article.className = 'job-listing-card'
         article.dataset.tecnologia = job.data.tecnologia
