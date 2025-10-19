@@ -29,13 +29,18 @@ jobsListingSection.addEventListener('click', (event) =>{
 })
 
 
+
+// <--------------------
+
+
 const selectTecnologias = document.getElementById('filtro-tecnologias');
 const selectUbicacion = document.getElementById('filtro-ubicacion');
 const selectContrato = document.getElementById('filtro-contrato');
 const selectExperiencia = document.getElementById('filtro-experiencia');
-const articulos = document.querySelectorAll('.jobs-listings article');
+
 
 function filtrarTrabajos(){
+    const articulos = document.querySelectorAll('.job-listing-card');
     const tecnologia = selectTecnologias.value;
     const ubicacion = selectUbicacion.value;
     const contrato = selectContrato.value;
@@ -46,13 +51,10 @@ function filtrarTrabajos(){
         const cumpleUbicacion = ubicacion === ""  ||articulo.dataset.ubicacion === ubicacion;
         const cumpleContrato = contrato === ""  ||articulo.dataset.contrato === contrato;
         const cumpleExperiencia = experiencia === ""  ||articulo.dataset.experiencia === experiencia;
+        
+        const visible = cumpleTecnologia && cumpleUbicacion && cumpleContrato && cumpleExperiencia;
 
-
-        if(cumpleTecnologia && cumpleUbicacion && cumpleContrato && cumpleExperiencia){
-            articulo.style.display = 'flex';
-        } else{
-            articulo.style.display = 'none';
-        }
+        articulo.classList.toggle('is-hidden', !visible)
     });
 }
 
@@ -64,13 +66,35 @@ selectExperiencia.addEventListener('change',filtrarTrabajos);
 
 
 
+// <-----------------------------------------
 
-fetch()
+
+const container = document.querySelector('.jobs-listings')
+fetch("../json/data.json")
 .then((response) =>{
     return response.json();
 })
-.then((jobs)=>{
-    jobs.forEach(job =>{
-        const article = document
+.then((jobs) =>{
+    jobs.forEach((job) =>{
+        console.log(job)
+        const article = document.createElement('article')
+        article.className = 'job-listing-card'
+        article.dataset.tecnologia = job.data.tecnologia
+        article.dataset.ubicacion = job.data.ubicacion
+        article.dataset.contrato = job.data.contrato
+        article.dataset.experiencia = job.data.experiencia
+
+        article.innerHTML= `
+        <div>
+            <h3>${job.articulo}</h3>
+            <p>${job.empresa} | ${job.ubicacion}</p>
+            <p>${job.descripcion}</p>
+        </div>
+        <div>
+            <button class="button-apply-job">Aplicar</button>
+        </div>
+        `
+
+        container.appendChild(article)
     })
 })

@@ -204,6 +204,7 @@ main > section:nth-child(1) > div {
   gap: 0.5em 0.5em;
 
   select{
+    width: 100%;
     padding: 0.625rem 1.25rem;
     background-color: #242d3a ;
     border: 0;
@@ -422,6 +423,8 @@ footer {
       padding: 1rem;
       border: 2px solid #141d26;
       display: flex;
+      justify-content: space-between;
+
 
       p:nth-child(2) {
         color: var(--text-muted);
@@ -433,6 +436,11 @@ footer {
 
       h3 {
         font-weight: 500;
+      }
+
+
+      &.is-hidden{
+        display: none;
       }
 
 }
