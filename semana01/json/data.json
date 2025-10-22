@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "articulo": "Ingeniero de Software Senior (React)",
+    "empresa": "Tech Solutions Inc.",
+    "ubicacion": "Remoto",
+    "descripcion": "Liderar el desarrollo frontend con React y Node.js. Se requiere autonomía y excelentes habilidades de arquitectura de software.",
+    "data": {
+      "tecnologia": "React",
+      "ubicacion": "Remoto",
+      "contrato": "TiempoCompleto",
+      "experiencia": "Senior"
+    }
+  },
+  {
+    "id": 2,
+    "articulo": "Analista de Datos Jr. (Python)",
+    "empresa": "Data Driven Co.",
+    "ubicacion": "Ciudad de Mexico",
+    "descripcion": "Rol de medio tiempo. Enfocado en la limpieza y visualización de grandes conjuntos de datos usando Python y SQL. Ideal para recién graduados.",
+    "data": {
+      "tecnologia": "Python",
+      "ubicacion": "Ciudad de Mexico",
+      "contrato": "MedioTiempo",
+      "experiencia": "Junior"
+    }
+  },
+  {
+    "id": 3,
+    "articulo": "Desarrollador iOS Semi Senior",
+    "empresa": "Mobile Apps Ltd.",
+    "ubicacion": "Guadalajara",
+    "descripcion": "Desarrollo y mantenimiento de aplicaciones nativas en iOS con Swift. Proyecto de 6 meses con opción a extensión.",
+    "data": {
+      "tecnologia": "Swift",
+      "ubicacion": "Guadalajara",
+      "contrato": "ContratoTemporal",
+      "experiencia": "SemiSenior"
+    }
+  },
+  {
+    "id": 4,
+    "articulo": "Ingeniero de DevOps (AWS)",
+    "empresa": "Cloud Services SA",
+    "ubicacion": "Remoto",
+    "descripcion": "Gestión de infraestructura en AWS, CI/CD y automatización con Terraform. Se requiere un nivel Senior para tomar decisiones de arquitectura.",
+    "data": {
+      "tecnologia": "AWS",
+      "ubicacion": "Remoto",
+      "contrato": "TiempoCompleto",
+      "experiencia": "Senior"
+    }
+  },
+  {
+    "id": 5,
+    "articulo": "Especialista en Bases de Datos",
+    "empresa": "Banco Central Tech",
+    "ubicacion": "Ciudad de Mexico",
+    "descripcion": "Mantenimiento y optimización de bases de datos críticas. Se valorará experiencia con grandes volúmenes de datos y alta disponibilidad.",
+    "data": {
+      "tecnologia": "Python",
+      "ubicacion": "Ciudad de Mexico",
+      "contrato": "TiempoCompleto",
+      "experiencia": "Senior"
+    }
+  },
+  {
+    "id": 6,
+    "articulo": "Desarrollador Trainee Frontend",
+    "empresa": "Startup XYZ",
+    "ubicacion": "Guadalajara",
+    "descripcion": "Primera oportunidad laboral. Aprende React y las bases del desarrollo web moderno con mentoría directa de un Senior.",
+    "data": {
+      "tecnologia": "React",
+      "ubicacion": "Guadalajara",
+      "contrato": "TiempoCompleto",
+      "experiencia": "Trainee"
+    }
+  },
+  {
+    "id": 7,
+    "articulo": "Arquitecto de Soluciones Cloud",
+    "empresa": "Global Systems",
+    "ubicacion": "Remoto",
+    "descripcion": "Diseño de arquitecturas en la nube escalables y seguras. Dominio de AWS y certificación requerida. Rol de tiempo completo.",
+    "data": {
+      "tecnologia": "AWS",
+      "ubicacion": "Remoto",
+      "contrato": "TiempoCompleto",
+      "experiencia": "Senior"
+    }
+  },
+  {
+    "id": 8,
+    "articulo": "Desarrollador Full Stack (React/Python)",
+    "empresa": "Agencia Digital",
+    "ubicacion": "Ciudad de Mexico",
+    "descripcion": "Desarrollo de proyectos web de inicio a fin. Se requiere buen manejo de React en frontend y Python (Django/Flask) en backend.",
+    "data": {
+      "tecnologia": "Python",
+      "ubicacion": "Ciudad de Mexico",
+      "contrato": "ContratoTemporal",
+      "experiencia": "SemiSenior"
+    }
+  },
+  {
+    "id": 9,
+    "articulo": "Ingeniero Junior en Swift",
+    "empresa": "Fintech Mobile",
+    "ubicacion": "Guadalajara",
+    "descripcion": "Únete al equipo de desarrollo de una app financiera de alto tráfico. Experiencia mínima requerida, enfoque en calidad de código Swift.",
+    "data": {
+      "tecnologia": "Swift",
+      "ubicacion": "Guadalajara",
+      "contrato": "TiempoCompleto",
+      "experiencia": "Junior"
+    }
+  },
+  {
+    "id": 10,
+    "articulo": "Pasantía de Verano (Trainee)",
+    "empresa": "Innovate Labs",
+    "ubicacion": "Remoto",
+    "descripcion": "Pasantía de 3 meses en el área de investigación y desarrollo. Proyecto específico en análisis de datos. Modalidad remota.",
+    "data": {
+      "tecnologia": "Python",
+      "ubicacion": "Remoto",
+      "contrato": "ContratoTemporal",
+      "experiencia": "Trainee"
+    }
+  }
+]

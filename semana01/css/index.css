@@ -121,6 +121,10 @@ nav {
       color: var(--text-primary);
       outline: none;
     }
+
+    &.nav-selected{
+      color: #09f;
+    }
   }
 }
 
