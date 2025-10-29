@@ -10,16 +10,37 @@
     <script type="module">
         import React from "https://esm.sh/react?dev";
         import ReactDOM from "https://esm.sh/react-dom/client?dev";
+    
 
-        const titulo = React.createElement(
-            "h1",
-            {style : { color: "#09f"}},
-            "Hola, React.js!"
-        )
+        window.React = React;
+        window.ReactDOM = ReactDOM;
+    </script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        // Componente de React
+
+        function Saludo({nombre, color}) {
+            return <h2 style={{ color: color }}>Hola, {nombre}!</h2>;
+        }
+
+
+        function App() {
+            return(
+                <div>
+                    <Saludo nombre="Jorge" color="#09f" />
+                    <Saludo nombre="María" color="#f00" />
+                    <Saludo nombre="Luis" color="#0f0" />
+                </div>
+            )
+        }
 
         const rootEl = document.querySelector('#root')
         const root = ReactDOM.createRoot(rootEl)
-        root.render(titulo)
+        root.render(<App />)
+
     </script>
 </head>
 <body>
@@ -32,9 +53,11 @@
                 <a href="./empleos.html" class="nav-selected">Empleos</a>
             </nav>
         </header>
-        
         <main>
-            <section >
+            <section class="jobs-search" >
+                <h1>React.js, primeros pasos</h1>
+
+                <div id="root"></div>
             </section>
         </main>
 
